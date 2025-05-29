@@ -1,0 +1,105 @@
+/* === 標籤選擇器 === */
+body {
+  background-color: #ffffff;
+}
+
+/* === 主標題樣式 === */
+.title {
+  font-weight: bold;
+  font-size: 70px;
+  color: #1F2A44;
+  display: flex;
+  justify-content: center; /* 水平置中 */
+  margin-top: 40px;
+}
+
+/* === 副標題樣式 === */
+.subtitle {
+  color: #333333;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* === 一般內文字體樣式 === */
+.content {
+  font-size: 20px;
+  color: #333333;
+  text-align: center;
+  margin: 20px 40px;
+  line-height: 1.6;
+}
+
+/* === 區塊標題樣式，例如「關於我們」、「作品展示」 === */
+.section-title {
+  color: #6B7280;
+  font-size: 50px;
+  height: 90px; /* 產生向下間隔 */
+  text-align: center;
+  margin-top: 60px;
+  line-height: 90px;
+}
+
+/* === 頁尾文字樣式（© 版權等） === */
+.footer-text {
+  text-align: center;
+  font-size: 16px;
+  color: #888888;
+  padding: 30px 10px;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* === 頁尾連結容器（包含多個按鈕） === */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* === 單一按鈕樣式，例如「工作人員」、「隱私權政策」按鈕 === */
+.link-item {
+  display: flex;
+  justify-content: center; /* 水平置中 */
+  align-items: center;     /* 垂直置中 */
+  height: 50px;
+  border-radius: 10px;
+  background-color: #5b95ec;
+  margin: 10px;
+  width: 280px;
+  flex: none;
+}
+
+/* === 頁尾連結內的文字連結樣式 === */
+.link-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+@media (max-width:1250px) {
+    /* 當螢幕寬度小於 1250px 時，套用這個區域的css*/
+  .footer-links {
+        flex-wrap:wrap; /* 允許換行 */
+    }
+  .link-item{
+        width:45%;
+  }
+}
+/* 電腦版：顯示桌面選單，隱藏手機選單 */
+.desktop-menu {
+  text-align: center;
+  display: block;
+}
+.mobile-menu {
+  text-align: center;
+  display: none;
+}
+
+/* 手機版：隱藏桌面選單，顯示手機選單 */
+@media (max-width: 500px) {
+  .desktop-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
