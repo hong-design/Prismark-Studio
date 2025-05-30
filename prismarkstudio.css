@@ -54,6 +54,11 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+  background-color: #fff8dc;   /* 背景色：淡米黃色 */
+  display: flex;           /* 使用 Flexbox */
+  flex-direction: row;     /* 橫向排列 */
+  gap: 10px;               /* 元素間距 */
+  justify-content: center; /* 水平置中（可選） */
 }
 
 /* === 單一按鈕樣式，例如「工作人員」、「隱私權政策」按鈕 === */
