@@ -1,107 +1,144 @@
-/* === 標籤選擇器 === */
+/* ========= 棱銘工作室 Prismyth Studio 網站樣式表 ========= */
+
+/* 設定整體背景與字體樣式 */
 body {
-  background-color: #ffffff;
+  background: linear-gradient(to right, #f9fafb, #e6ecf2); /* 漸層背景提升視覺層次 */
+  font-family: 'Noto Sans TC', sans-serif; /* 使用支援正體中文的 Google 字體 */
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+  text-align: center; /* 將所有文字置中對齊 */
 }
 
-/* === 主標題樣式 === */
-.title {
-  font-weight: bold;
-  font-size: 70px;
-  color: #1F2A44;
-  display: flex;
-  justify-content: center; /* 水平置中 */
-  margin-top: 40px;
-}
-
-/* === 副標題樣式 === */
-.subtitle {
-  color: #333333;
-  font-size: 30px;
-  text-align: center;
-  margin-top: 10px;
-}
-
-/* === 一般內文字體樣式 === */
+/* 頁面段落通用內容區塊樣式 */
 .content {
-  font-size: 20px;
-  color: #333333;
-  text-align: center;
-  margin: 20px 40px;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  animation: fadeIn 0.8s ease-out both;
+  background-color: #ffffffa4;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease;
+}
+.content:hover {
+  transform: translateY(-2px);
 }
 
-/* === 區塊標題樣式，例如「關於我們」、「作品展示」 === */
+/* 桌機版上方選單列樣式 */
+.desktop-menu {
+  display: flex;
+  justify-content: center; /* 將選單置中 */
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.desktop-menu a {
+  color: #0d6efd;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.desktop-menu a:hover {
+  color: #084298;
+  text-decoration: underline;
+}
+
+/* 手機版菜單圖示（768px 以下顯示） */
+.mobile-menu {
+  display: none;
+  margin-bottom: 1rem;
+}
+
+/* 主標題樣式 */
+.title {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #222;
+  animation: slideInTop 0.9s ease-out both;
+}
+
+/* 副標題樣式 */
+.subtitle {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  animation: slideInTop 1s ease-out both;
+  animation-delay: 0.2s;
+}
+
+/* 各段落區塊標題樣式 */
 .section-title {
-  color: #6B7280;
-  font-size: 50px;
-  height: 90px; /* 產生向下間隔 */
-  text-align: center;
-  margin-top: 60px;
-  line-height: 90px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: #1c1c1c;
+  border-left: 4px solid #0d6efd;
+  padding-left: 0.5rem;
+  display: inline-block; /* 搭配 text-align: center 使其置中 */
 }
 
-/* === 頁尾文字樣式（© 版權等） === */
+/* 頁尾樣式 */
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
 .footer-text {
-  text-align: center;
-  font-size: 16px;
-  color: #888888;
-  padding: 30px 10px;
-  border-top: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+  color: #777;
 }
 
-/* === 頁尾連結容器（包含多個按鈕） === */
+/* 底部導覽連結樣式 */
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 40px;
-  background-color:#041c3f
+  gap: 1.2rem;
+  margin-top: 1rem;
 }
-
-/* === 單一按鈕樣式，例如「工作人員」、「隱私權政策」按鈕 === */
-.link-item {
-  display: flex;
-  justify-content: center; /* 水平置中 */
-  align-items: center;     /* 垂直置中 */
-  height: 50px;
-  border-radius: 10px;
-  background-color: #5b95ec;
-  margin: 10px;
-  width: 280px;
-  flex: none;
-
-}
-
-/* === 頁尾連結內的文字連結樣式 === */
 .link-item a {
-  color: white;
   text-decoration: none;
-  font-weight: bold;
+  color: #0d6efd;
+  font-size: 0.95rem;
+  font-weight: 500;
 }
-@media (max-width:1250px) {
-    /* 當螢幕寬度小於 1250px 時，套用這個區域的css*/
-  .footer-links {
-        flex-wrap:wrap; /* 允許換行 */
-    }
-  .link-item{
-        width:45%;
-  }
-}
-/* 電腦版：顯示桌面選單，隱藏手機選單 */
-.desktop-menu {
-  text-align: center;
-  display: block;
-}
-.mobile-menu {
-  text-align: center;
-  display: none;
+.link-item a:hover {
+  color: #0a58ca;
 }
 
-/* 手機版：隱藏桌面選單，顯示手機選單 */
-@media (max-width: 500px) {
+/* 響應式設定：螢幕小於 768px 時 */
+@media (max-width: 768px) {
   .desktop-menu {
-    display: none;
+    display: none; /* 隱藏桌機選單 */
   }
   .mobile-menu {
-    display: block;
+    display: block; /* 顯示手機選單圖示 */
+  }
+}
+
+/* 標題滑入動畫 */
+@keyframes slideInTop {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* 內容淡入動畫 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
