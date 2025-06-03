@@ -6,7 +6,7 @@
   <!-- 設定響應式視窗大小，讓網站在手機上也能良好顯示 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- 頁面標題，顯示於瀏覽器分頁標籤 -->
-  <title>棱銘工作室 Prismark Studio</title>
+  <title>銘岸｜Zynvrae</title>
 
   <!-- 引入 Google Fonts 的 Noto Sans TC 字體（正體中文友善字型） -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
@@ -25,6 +25,63 @@
   <meta name="description" content="棱銘工作室 Prismark Studio 是一個專注於遊戲開發與網頁創作的獨立創作者品牌。" />
   <meta name="keywords" content="棱銘工作室, Prismark Studio, 遊戲開發, 獨立創作者, 網頁設計, 台灣創作者" />
   <meta name="author" content="棱銘工作室 Prismark Studio" />
+
+  <!-- 彈出視窗容器 -->
+<div id="renameModal" style="
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+">
+  <div style="
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    animation: popup-fade 0.3s ease-out;
+  ">
+    <h2 style="margin-top: 0;">我們改名了！</h2>
+    <p style="line-height: 1.6;">
+      感謝您的關注！我們原為 <strong><br>棱銘工作室 Prismark Studio</strong>
+      <br>
+      現在正式更名為：<br>
+      <strong style="color: #2563eb;">銘岸｜Zynvrae</strong>
+    </p>
+    <p style="font-size: 0.9rem; color: #555;">
+      我們將持續以誠實創作與文化結合的精神，打造更有深度的數位體驗！
+    </p>
+    <button onclick="document.getElementById('renameModal').style.display='none'" style="
+      margin-top: 1rem;
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    ">我知道了</button>
+  </div>
+</div>
+
+<!-- 彈窗動畫 CSS -->
+<style>
+@keyframes popup-fade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+</style>
+
 
   <!-- 讓社群分享顯示縮圖與預覽 -->
   <meta property="og:title" content="棱銘工作室 Prismark Studio" />
@@ -49,7 +106,7 @@
 
 
   <!-- 主標題與副標題 -->
-  <div class="title">棱銘工作室 Prismark Studio</div>
+  <div class="title">銘岸｜Zynvrae</div>
   <div class="subtitle">創造深刻體驗的模擬遊戲開發者</div>
 
   <!-- 品牌簡介內容 -->
@@ -62,11 +119,11 @@
   <!-- 關於我們段落標題與描述 -->
   <div class="section-title">關於我們</div>
   <div class="content">
-    棱銘工作室（Prismyth Studio）由一位來自台灣的青少年獨立創作者成立，
-    專注於模擬經營與文化體驗類型的遊戲設計與製作。<br>
-    「棱」代表多面向的創意與技術，「銘」象徵記憶與情感的深刻印記；
-    我們的使命是用遊戲說故事，將文化、經營與玩家的想像連結起來。<br>
-    目前由一人獨立開發，未來將逐步擴展為小型團隊，持續開發更有趣、有意義的互動作品。
+  銘岸｜Zynvrae 是一個致力於創新與文化融合的個人創作品牌。<br>
+  於2525/5/16創立，我們專注於開發兼具敘事性與沉浸感的數位體驗，從模擬遊戲到網頁互動，致力於讓創意成為人與人之間的橋樑。<br>
+  品牌名稱「銘岸」，象徵記憶與連結的岸邊，我們相信每一項創作都是在時代潮流中留下的刻痕<br>
+  而「Zynvrae」則是一個獨創的詞語，融合未來感與藝術性，代表我們對獨特風格與自由創造的堅持<br>
+  我們持續探索科技與敘事的交會點，期待透過作品打造出專屬於這個時代的感動與共鳴。<br>
   </div>
 
   <!-- 作品展示區塊 -->
@@ -82,14 +139,14 @@
   <div class="content">
     如果你對我們的作品感興趣，或是想要合作開發，歡迎聯絡我們！<br><br>
     有任何合作提案、玩家建議或媒體詢問，歡迎透過以下方式與我們聯繫：<br><br>
-    📧 Email：<a href="mailto:prismarkstudio@gmail.com">prismarkstudio@gmail.com</a><br>
-    📱 IG／TikTok／YouTube：搜尋「棱銘工作室 Prismark Studio」
+    📧 Email：<a href="mailto:zynvrae@gmail.com">zynvrae@gmail.com</a><br>
+    📱 IG／TikTok／YouTube：搜尋「銘岸｜Zynvrae」
   </div>
 
   <!-- 頁尾版權資訊 -->
   <footer>
     <div class="footer-text">
-      © 2025 棱銘工作室 Prismark Studio ｜ <a href="privacy.html" target="_blank">隱私權政策</a>
+      © 2025 銘岸｜Zynvrae ｜ <a href="privacy.html" target="_blank">隱私權政策</a>
     </div>
   </footer>
 
