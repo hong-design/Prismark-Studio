@@ -4,151 +4,136 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>棱銘｜Zynvrae — 遊戲開發與網頁創作的獨立品牌</title>
-<!-- 預覽縮圖設定（統一圖片網址） -->
-<meta property="og:image" content="https://prismarkstudio.site/og-image.jpg" />
-<meta name="twitter:image" content="https://prismarkstudio.site/og-image.jpg" />
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- SEO Meta -->
+  <meta name="description" content="棱銘｜Zynvrae 是由台灣創作者洪孝銘創立的獨立品牌，專注於模擬遊戲開發、互動網頁與數位敘事，融合文化底蘊與創新精神。" />
+  <meta name="keywords" content="Zynvrae, 棱銘, 獨立遊戲, 模擬遊戲, 遊戲開發, 網頁設計, 台灣創作品牌, 數位藝術, 文化敘事" />
+  <meta name="author" content="棱銘｜Zynvrae" />
+  <meta name="theme-color" content="#1f2937" />
+  <link rel="canonical" href="https://prismarkstudio.site/" />
 
-<!-- Favicon -->
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <!-- Open Graph (Facebook) -->
+  <meta property="og:title" content="棱銘｜Zynvrae — 遊戲開發與網頁創作的獨立品牌" />
+  <meta property="og:description" content="專注於模擬遊戲與文化網頁創作的數位品牌，融合創新與情感，打造有深度的互動體驗。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://prismarkstudio.site/" />
+  <meta property="og:image" content="https://prismarkstudio.site/og-image.jpg" />
+  <meta property="og:site_name" content="棱銘｜Zynvrae" />
 
-<!-- Canonical URL -->
-<link rel="canonical" href="https://prismarkstudio.site/" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="棱銘｜Zynvrae — 遊戲開發與網頁創作的獨立品牌" />
+  <meta name="twitter:description" content="由洪孝銘創立的品牌，致力於模擬遊戲、文化敘事與互動設計，連結真實與創意。" />
+  <meta name="twitter:image" content="https://prismarkstudio.site/og-image.jpg" />
 
-<!-- SEO Meta -->
-<meta name="description" content="棱銘｜Zynvrae 是由台灣創作者洪孝銘創立的獨立品牌，專注於模擬遊戲開發、互動網頁與數位敘事，融合文化底蘊與創新精神。" />
-<meta name="keywords" content="Zynvrae, 棱銘, 獨立遊戲, 模擬遊戲, 遊戲開發, 網頁設計, 台灣創作品牌, 數位藝術, 文化敘事" />
-<meta name="author" content="棱銘｜Zynvrae" />
-<meta name="theme-color" content="#1f2937" />
-
-<!-- Open Graph (Facebook) -->
-<meta property="og:title" content="棱銘｜Zynvrae — 遊戲開發與網頁創作的獨立品牌" />
-<meta property="og:description" content="專注於模擬遊戲與文化網頁創作的數位品牌，融合創新與情感，打造有深度的互動體驗。" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://prismarkstudio.site/" />
-<meta property="og:image" content="https://prismarkstudio.site/og-image.jpg" />
-<meta property="og:site_name" content="棱銘｜Zynvrae" />
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="棱銘｜Zynvrae — 遊戲開發與網頁創作的獨立品牌" />
-<meta name="twitter:description" content="由洪孝銘創立的品牌，致力於模擬遊戲、文化敘事與互動設計，連結真實與創意。" />
-<meta name="twitter:image" content="https://prismarkstudio.site/og-image.jpg" />
-
-
-  <!-- 外部樣式表 -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="prismarkstudio.css" />
 
-  <!-- 彈窗動畫樣式 -->
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "棱銘｜Zynvrae",
+    "url": "https://prismarkstudio.site/",
+    "logo": "https://prismarkstudio.site/og-image.jpg",
+    "sameAs": [
+      "https://www.instagram.com/prismarkstudio/",
+      "https://www.youtube.com/channel/UCx8y_WbYTmTtqZJQh07AH0w",
+      "https://www.tiktok.com/@prismarkstudio1"
+    ],
+    "description": "獨立遊戲與數位敘事品牌，融合文化與創新。"
+  }
+  </script>
+
   <style>
     @keyframes popup-fade {
-      from {
-        opacity: 0;
-        transform: scale(0.95);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
     }
   </style>
 </head>
 <body>
-
-  <!-- 彈出視窗容器 -->
-  <div id="renameModal" style="
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-  ">
-    <div style="
-      background: white;
-      padding: 2rem;
-      border-radius: 1rem;
-      max-width: 400px;
-      text-align: center;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-      animation: popup-fade 0.3s ease-out;
-    ">
+  <!-- 改名通知彈窗 -->
+  <div id="renameModal" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); display: flex; align-items: center; justify-content: center; z-index: 9999;">
+    <div style="background: white; padding: 2rem; border-radius: 1rem; max-width: 400px; text-align: center; box-shadow: 0 8px 24px rgba(0,0,0,0.2); animation: popup-fade 0.3s ease-out;">
       <h2 style="margin-top: 0;">我們改名了！</h2>
       <p style="line-height: 1.6;">
-        感謝您的關注！我們原為 <strong><br>棱銘工作室 Prismark Studio</strong>
-        <br>
+        感謝您的關注！我們原為 <strong><br>棱銘工作室 Prismark Studio</strong><br>
         現在正式更名為：<br>
         <strong style="color: #2563eb;">棱銘｜Zynvrae</strong>
       </p>
-      <p style="font-size: 0.9rem; color: #555;">
-        我們將持續以誠實創作與文化結合的精神，打造更有深度的數位體驗！
-      </p>
-      <button onclick="document.getElementById('renameModal').style.display='none'" style="
-        margin-top: 1rem;
-        background: #2563eb;
-        color: white;
-        border: none;
-        padding: 0.6rem 1.2rem;
-        border-radius: 0.5rem;
-        cursor: pointer;
-      ">我知道了</button>
+      <p style="font-size: 0.9rem; color: #555;">我們將持續以誠實創作與文化結合的精神，打造更有深度的數位體驗！</p>
+      <button onclick="closeModal()" style="margin-top: 1rem; background: #2563eb; color: white; border: none; padding: 0.6rem 1.2rem; border-radius: 0.5rem; cursor: pointer;">我知道了</button>
     </div>
   </div>
 
-  <!-- 網站內容區塊 -->
-  <div class="content">🔗 外部連結</div>
+  <script>
+    const modal = document.getElementById('renameModal');
+    function closeModal() {
+      modal.style.display = 'none';
+      localStorage.setItem('modalSeen', 'yes');
+    }
+    if (localStorage.getItem('modalSeen')) {
+      modal.style.display = 'none';
+    }
+  </script>
 
-  <div class="footer-links">
-    <a href="https://www.instagram.com/prismarkstudio/" target="_blank">Instagram</a>、
-    <a href="https://www.youtube.com/channel/UCx8y_WbYTmTtqZJQh07AH0w" target="_blank">YouTube</a>、
-    <a href="https://www.tiktok.com/@prismarkstudio1" target="_blank">TikTok</a>
-    <a href="https://forms.gle/A3WkwaiX5N5t3ZTt6" target="_blank">遊戲市場調查問卷</a>
-  </div>
+  <header>
+    <h1 class="title">棱銘｜Zynvrae</h1>
+    <p class="subtitle">創造深刻體驗的模擬遊戲開發者</p>
+  </header>
 
-  <div class="title">棱銘｜Zynvrae</div>
-  <div class="subtitle">創造深刻體驗的模擬遊戲開發者</div>
+  <main>
+    <section>
+      <h2 class="section-title">關於我們</h2>
+      <p class="content">
+        銘岸｜Zynvrae 是一個致力於創新與文化融合的個人創作品牌。<br>
+        於 2025/5/16 創立，專注於開發兼具敘事性與沉浸感的數位體驗。<br>
+        「Zynvrae」代表我們對風格與自由創作的堅持。
+      </p>
+    </section>
 
-  <div class="content">
-    棱銘｜Zynvrae工作室是一個致力於模擬與文化體驗遊戲創作的獨立開發者品牌，專注於結合現代科技與生活觀察，打造具深度與溫度的遊戲作品。<br>
-    從個人開發起步，我們相信每一個故事、每一次互動，都能成為觸動人心的可能。
-  </div>
+    <section>
+      <h2 class="section-title">作品展示</h2>
+      <p class="content">
+        🔸 餐館模擬遊戲：從零開始打造夢想餐館，融合管理與人情故事。<br>
+        🔸 媽祖繞境模擬（概念階段）：重現台灣民間信仰文化，扮演主轎與香燈腳。<br><br>
+        🔜 更多模擬作品即將登場，敬請期待！
+      </p>
+    </section>
 
-  <div class="section-title">關於我們</div>
-  <div class="content">
-    銘岸｜Zynvrae 是一個致力於創新與文化融合的個人創作品牌。<br>
-    於2025/5/16創立，專注於開發兼具敘事性與沉浸感的數位體驗。<br>
-    「Zynvrae」代表我們對風格與自由創作的堅持。
-  </div>
+    <section>
+      <h2 class="section-title">聯絡我們</h2>
+      <p class="content">
+        有任何合作提案、玩家建議或媒體詢問，歡迎聯絡我們：<br><br>
+        📧 Email：<a href="mailto:zynvrae@gmail.com">zynvrae@gmail.com</a><br>
+        📱 IG／TikTok／YouTube：搜尋「棱銘｜Zynvrae」
+      </p>
+    </section>
 
-  <div class="section-title">作品展示</div>
-  <div class="content">
-    🔸 餐館模擬遊戲：從零開始打造夢想餐館，融合管理與人情故事。<br>
-    🔸 媽祖繞境模擬（概念階段）：重現台灣民間信仰文化，扮演主轎與香燈腳。<br><br>
-    🔜 更多模擬作品即將登場，敬請期待！
-  </div>
-
-  <div class="section-title">聯絡我們</div>
-  <div class="content">
-    有任何合作提案、玩家建議或媒體詢問，歡迎聯絡我們：<br><br>
-    📧 Email：<a href="mailto:zynvrae@gmail.com">zynvrae@gmail.com</a><br>
-    📱 IG／TikTok／YouTube：搜尋「棱銘｜Zynvrae」
-  </div>
+    <section>
+      <h2 class="section-title">外部連結</h2>
+      <p class="content">
+        <a href="https://www.instagram.com/prismarkstudio/" target="_blank">Instagram</a>、
+        <a href="https://www.youtube.com/channel/UCx8y_WbYTmTtqZJQh07AH0w" target="_blank">YouTube</a>、
+        <a href="https://www.tiktok.com/@prismarkstudio1" target="_blank">TikTok</a>、
+        <a href="https://forms.gle/A3WkwaiX5N5t3ZTt6" target="_blank">遊戲市場調查問卷</a>
+      </p>
+    </section>
+  </main>
 
   <footer>
     <div class="footer-text">
       © 2025 棱銘｜Zynvrae ｜ <a href="隱私權.html" target="_blank">隱私權政策</a>
     </div>
+    <div class="footer-links">
+      <div class="link-item"><a href="工作人員名單.html" target="_blank">工作人員</a></div>
+      <div class="link-item"><a href="關於我們.html" target="_blank">關於我們</a></div>
+      <div class="link-item"><a href="贊助名單及金額.html" target="_blank">贊助名單</a></div>
+    </div>
   </footer>
-
-  <div class="footer-links">
-    <div class="link-item"><a href="工作人員名單.html" target="_blank">工作人員</a></div>
-    <div class="link-item"><a href="隱私權.html" target="_blank">隱私權政策</a></div>
-    <div class="link-item"><a href="關於我們.html" target="_blank">關於我們</a></div>
-    <div class="link-item"><a href="贊助名單及金額.html" target="_blank">贊助名單</a></div>
-  </div>
 </body>
 </html>
