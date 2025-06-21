@@ -1,144 +1,131 @@
-/* ========= 棱銘工作室 Prismyth Studio 網站樣式表 ========= */
+/* ========= 棱銘｜Zynvrae 官方網站樣式表 ========= */
 
-/* 設定整體背景與字體樣式 */
+/* 設定網頁基本樣式 */
 body {
-  background: linear-gradient(to right, #f9fafb, #e6ecf2); /* 設定從左到右的漸層背景顏色 */
-  font-family: 'Noto Sans TC', sans-serif; /* 設定整體字體為 Google 的 Noto Sans TC（適合中文） */
+  background: linear-gradient(to right, #f9fafb, #e6ecf2); /* 背景使用柔和漸層，提升質感 */
+  font-family: 'Noto Sans TC', sans-serif; /* 使用適合中文閱讀的字體 */
   margin: 0; /* 移除瀏覽器預設邊距 */
-  padding: 2rem; /* 頁面內距設定為 2rem，讓內容不會太貼邊 */
-  color: #333; /* 設定文字顏色為深灰色 */
-  text-align: center; /* 將頁面中的所有文字置中 */
+  padding: 2rem; /* 頁面左右間距設為 2rem，避免內容貼邊 */
+  color: #1f2937; /* 使用深灰藍文字色，視覺沉穩 */
+  text-align: center; /* 所有文字置中對齊 */
 }
 
-/* 頁面段落通用內容區塊樣式 */
-.content {
-  font-size: 1.05rem; /* 設定文字大小略大於預設值 */
-  margin-bottom: 1.5rem; /* 區塊底部留白 1.5rem */
-  line-height: 1.8; /* 行高設定，讓段落更易閱讀 */
-  animation: fadeIn 0.8s ease-out both; /* 套用淡入動畫效果 */
-  background-color: #ffffffa4; /* 背景為白色但有透明度（a4 表示 alpha 為約 64%） */
-  padding: 1rem; /* 區塊內距設定 */
-  border-radius: 0.5rem; /* 邊角圓弧處理，美化外觀 */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04); /* 添加柔和陰影，提升立體感 */
-  transition: transform 0.3s ease; /* 滑鼠懸停時的動畫過渡效果 */
-}
-.content:hover {
-  transform: translateY(-2px); /* 滑鼠懸停時輕微上移 2px，增強互動感 */
-}
-
-/* 桌機版上方選單列樣式 */
-.desktop-menu {
-  display: flex; /* 使用 flex 排版 */
-  justify-content: center; /* 水平置中排列 */
-  flex-wrap: wrap; /* 遇到寬度不足時自動換行 */
-  gap: 1rem; /* 每個選單項目間距 1rem */
-  margin-bottom: 1.5rem; /* 底部留白 */
-}
-.desktop-menu a {
-  color: #0d6efd; /* 連結顏色為藍色（Bootstrap 主色） */
-  font-weight: 500; /* 字體加粗 */
-  text-decoration: none; /* 移除底線 */
-  transition: color 0.3s ease; /* 滑鼠移動時的顏色過渡效果 */
-}
-.desktop-menu a:hover {
-  color: #084298; /* 滑鼠懸停時改為深藍色 */
-  text-decoration: underline; /* 顯示底線 */
-}
-
-/* 手機版菜單圖示（768px 以下顯示） */
-.mobile-menu {
-  display: none; /* 預設隱藏（桌機版不顯示） */
-  margin-bottom: 1rem; /* 與下方元素的距離 */
-}
-
-/* 主標題樣式 */
+/* 網站主標題樣式 */
 .title {
-  font-size: 2.6rem; /* 字體尺寸較大，做為主標題使用 */
-  font-weight: bold; /* 加粗字體 */
-  margin-bottom: 0.5rem; /* 下方留白 */
-  color: #222; /* 字體顏色比一般文字略深 */
-  animation: slideInTop 0.9s ease-out both; /* 套用滑入動畫效果 */
+  font-size: 2.5rem; /* 設定主標題大小 */
+  font-weight: 700; /* 粗體字增加辨識度 */
+  color: #111827; /* 使用略深色字強化主標題 */
+  margin-bottom: 0.5rem; /* 與副標題間保留間距 */
 }
 
-/* 副標題樣式 */
+/* 網站副標題樣式 */
 .subtitle {
-  font-size: 1.3rem; /* 字體尺寸較中等 */
-  color: #555; /* 使用較淡的深灰色 */
-  margin-bottom: 1.5rem; /* 底部留白 */
-  animation: slideInTop 1s ease-out both; /* 同樣套用滑入動畫 */
-  animation-delay: 0.2s; /* 延遲 0.2 秒開始動畫，與主標題錯開 */
+  font-size: 1.25rem; /* 副標題略小於主標題 */
+  color: #374151; /* 使用灰藍色，讓層級更清楚 */
+  margin-bottom: 2rem; /* 與下方內容保留間距 */
 }
 
-/* 各段落區塊標題樣式 */
+/* 區塊標題樣式 */
 .section-title {
-  font-size: 1.5rem; /* 標題字體大小 */
-  font-weight: 700; /* 字體加粗 */
-  margin-top: 2.5rem; /* 上方留白 */
-  margin-bottom: 0.75rem; /* 下方留白 */
-  color: #1c1c1c; /* 使用更深的灰色作為標題色 */
-  border-left: 4px solid #0d6efd; /* 左側加上藍色線條，增強標題辨識度 */
-  padding-left: 0.5rem; /* 與左側線條拉開距離 */
-  display: inline-block; /* 讓這個元素配合文字置中使用 */
+  font-size: 1.5rem; /* 每區段標題大小 */
+  font-weight: 700; /* 加粗提升視覺層級 */
+  margin-top: 3rem; /* 與前方區塊留出間距 */
+  margin-bottom: 1rem; /* 與內文段落留出間距 */
+  color: #2563eb; /* 使用品牌主色（藍色）強化識別 */
 }
 
-/* 頁尾樣式 */
+/* 內文字內容樣式（共用） */
+.content {
+  font-size: 1.05rem; /* 文字略大於預設，更易閱讀 */
+  margin-bottom: 1.5rem; /* 區塊下方間距 */
+  line-height: 1.8; /* 行高設定提升可讀性 */
+  background-color: #ffffffa4; /* 半透明白背景，加強區塊辨識 */
+  padding: 1rem; /* 內距增加閱讀空間 */
+  border-radius: 0.5rem; /* 圓角柔化視覺 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04); /* 淡陰影增加立體感 */
+  animation: fadeIn 0.8s ease-out both; /* 套用淡入動畫提升質感 */
+  transition: transform 0.3s ease; /* 鼠標懸停動畫過渡 */
+}
+
+/* 滑鼠懸停時內容區塊上浮效果 */
+.content:hover {
+  transform: translateY(-2px); /* 向上移動 2px 增加互動感 */
+}
+
+/* 頁尾區塊樣式 */
 footer {
-  margin-top: 3rem; /* 上方留白 */
-  padding-top: 1rem; /* 內距設定 */
-  border-top: 1px solid #ccc; /* 加上一條上邊框，與上方區塊區隔 */
-  text-align: center; /* 內容置中 */
-}
-.footer-text {
-  font-size: 0.9rem; /* 較小字體 */
-  color: #777; /* 使用淺灰色 */
+  margin-top: 4rem; /* 與主要內容區隔開 */
+  padding-top: 2rem; /* 上內距 */
+  border-top: 1px solid #d1d5db; /* 加上淡灰分隔線 */
+  color: #6b7280; /* 淺灰文字色 */
+  font-size: 0.9rem; /* 字體稍微縮小 */
 }
 
-/* 底部導覽連結樣式 */
+/* 頁尾版權文字樣式 */
+.footer-text {
+  margin-bottom: 0.5rem; /* 與連結區塊間距 */
+}
+
+/* 頁尾連結區塊容器 */
 .footer-links {
   display: flex; /* 使用 flex 排版 */
-  flex-wrap: wrap; /* 內容自動換行 */
   justify-content: center; /* 水平置中 */
-  gap: 1.2rem; /* 項目間距 */
-  margin-top: 1rem; /* 上方留白 */
+  gap: 1.5rem; /* 連結間保留間距 */
+  flex-wrap: wrap; /* 寬度不足時自動換行 */
 }
+
+/* 每個頁尾連結樣式 */
 .link-item a {
+  color: #2563eb; /* 使用品牌藍色 */
   text-decoration: none; /* 移除底線 */
-  color: #0d6efd; /* 使用藍色做為連結顏色 */
-  font-size: 0.95rem; /* 字體略大於正常大小 */
-  font-weight: 500; /* 字體加粗 */
 }
 .link-item a:hover {
-  color: #0a58ca; /* 滑鼠懸停時改成深藍色 */
+  text-decoration: underline; /* 滑鼠懸停時顯示底線 */
 }
 
-/* 響應式設定：螢幕寬度小於 768px 時套用以下設定 */
-@media (max-width: 768px) {
-  .desktop-menu {
-    display: none; /* 隱藏桌機版選單 */
-  }
-  .mobile-menu {
-    display: block; /* 顯示手機版菜單圖示 */
-  }
-}
-
-/* 主標題與副標題滑入動畫效果 */
-@keyframes slideInTop {
-  from {
-    transform: translateY(-30px); /* 起始位置向上偏移 30px */
-    opacity: 0; /* 起始時完全透明 */
-  }
-  to {
-    transform: translateY(0); /* 最終回到原始位置 */
-    opacity: 1; /* 變為完全可見 */
-  }
-}
-
-/* 區塊淡入動畫效果 */
+/* 動畫：進入時淡入淡出效果 */
 @keyframes fadeIn {
-  from {
-    opacity: 0; /* 起始透明 */
-  }
-  to {
-    opacity: 1; /* 淡入至完全可見 */
-  }
+  from { opacity: 0; transform: translateY(10px); } /* 起始為透明且往下 */
+  to { opacity: 1; transform: translateY(0); } /* 結束為正常顯示 */
+}
+
+/* 動畫：彈出用的縮放淡入效果 */
+@keyframes popup-fade {
+  from { opacity: 0; transform: scale(0.95); } /* 起始為縮小透明 */
+  to { opacity: 1; transform: scale(1); } /* 結束為正常大小透明度 */
+}
+
+/* 彈窗樣式（已內嵌，但建議移出） */
+#renameModal {
+  position: fixed; /* 固定在視窗中央 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* 背景半透明黑色遮罩 */
+  display: flex; /* 中央對齊用 */
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* 最上層顯示 */
+}
+#renameModal div {
+  background: #fff; /* 白色內容框 */
+  padding: 2rem; /* 內距 */
+  border-radius: 1rem; /* 圓角設計 */
+  max-width: 400px; /* 限制最大寬度 */
+  text-align: center; /* 內容置中 */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* 加強陰影 */
+  animation: popup-fade 0.3s ease-out; /* 淡入彈出動畫 */
+}
+#renameModal button {
+  margin-top: 1rem; /* 與段落留距離 */
+  background: #2563eb; /* 品牌藍色背景 */
+  color: white; /* 白色文字 */
+  border: none; /* 移除邊框 */
+  padding: 0.6rem 1.2rem; /* 內距 */
+  border-radius: 0.5rem; /* 圓角按鈕 */
+  cursor: pointer; /* 滑鼠變手形 */
+}
+#renameModal button:hover {
+  background: #1e40af; /* 懸停時更深藍色 */
 }
